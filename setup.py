@@ -15,7 +15,7 @@ setup(
     entry_points={"apache_airflow_provider": ["provider_info=lightup_airflow_provider.__init__:get_provider_info"]},
     license="Apache License 2.0",
     packages=find_packages(exclude=["*tests.*", "*tests"]),
-    install_requires=["apache-airflow>=2.3"],
+    install_requires=[],
     setup_requires=["setuptools", "wheel"],
     author="Lightup Data, Inc",
     author_email="support@lightup.ai",
