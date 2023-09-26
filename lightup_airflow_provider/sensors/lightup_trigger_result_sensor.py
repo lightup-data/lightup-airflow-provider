@@ -5,7 +5,7 @@ import urllib.parse
 from typing import Optional
 from urllib.parse import quote_plus
 
-from lightup_base_sensor_operator import LightupBaseSensorOperator
+from lightup_airflow_provider.sensors.lightup_base_sensor_operator import LightupBaseSensorOperator
 
 
 class LightupTriggerResultSensor(LightupBaseSensorOperator):
