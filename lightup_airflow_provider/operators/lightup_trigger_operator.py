@@ -2,7 +2,7 @@ import requests
 import urllib.parse
 from typing import Optional
 
-from lightup_base_operator import LightupBaseOperator
+from lightup_airflow_provider.operators.lightup_base_operator import LightupBaseOperator
 
 
 class LightupTriggerOperator(LightupBaseOperator):

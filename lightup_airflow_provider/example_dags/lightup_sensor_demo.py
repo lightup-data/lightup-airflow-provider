@@ -2,8 +2,8 @@ import datetime
 
 from airflow import models
 from airflow.operators import bash
-from lightup_trigger_operator import LightupTriggerOperator
-from lightup_trigger_result_sensor import LightupTriggerResultSensor
+from lightup_airflow_provider.operators.lightup_trigger_operator import LightupTriggerOperator
+from lightup_airflow_provider.sensors.lightup_trigger_result_sensor import LightupTriggerResultSensor
 
 YESTERDAY = datetime.datetime.now() - datetime.timedelta(days=1)
 
