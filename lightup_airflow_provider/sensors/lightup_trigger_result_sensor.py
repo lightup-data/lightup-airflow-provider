@@ -9,7 +9,7 @@ from lightup_airflow_provider.sensors.lightup_base_sensor_operator import Lightu
 
 
 class LightupTriggerResultSensor(LightupBaseSensorOperator):
-    template_fields = ['dag_run_id']
+    template_fields = ('_workspace_id', '_source_id', '_table_uuids', '_metric_uuids', 'dag_run_id')
 
     def __init__(
             self,

@@ -6,7 +6,7 @@ from lightup_airflow_provider.operators.lightup_base_operator import LightupBase
 
 
 class LightupTriggerOperator(LightupBaseOperator):
-    template_fields = ['dag_run_id']
+    template_fields = ('_workspace_id', '_source_id', '_table_uuids', '_metric_uuids', 'dag_run_id')
 
     def __init__(
             self,
